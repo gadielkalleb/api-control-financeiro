@@ -1,4 +1,4 @@
-let mongoose = require('./conMongo')
+let mongoose = require('../db/conMongo')
 
 let RendaMensalSchema = new mongoose.Schema({
     salario: {
