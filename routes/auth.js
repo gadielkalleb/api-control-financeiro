@@ -2,8 +2,8 @@ let express = require('express')
 
 let router = express.Router()
 
-router.get('/auth', (req, res) => {
-    res.status(200).send('auth')
-})
+let { auth } = require('../controllers/auth')
+
+router.get('/auth', auth)
 
 module.exports = router
